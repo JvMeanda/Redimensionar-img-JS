@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Redimensionar Imagem</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h2 class="header_title">
+            Redimensionar IMAGEM
+        </h2>
+    </header>
+
+    <div class="container_content">
+
+        <div class="drop_image_container">
+
+            <input type="file" class="image_window" accept="image/*" hidden>
+
+            <h1 class="title_size">
+                Solte a imagem <span class="aqui">AQUI!</span>
+            </h1>
+            <span class="ou"><strong>OU</strong></span>
+
+            <button class="btn_archive">Escolher Arquivo</button>
+
+        </div>
+
+        <div class="after_compressed">
+
+            <img src="" class="img_compressed">
+
+            <button class="btn_download">Download</button>
+
+            <div class="size_container">
+                <span class="spn_largu">Largura:</span>
+                <input type="number" name="largura" id="largura">
+
+                <span class="spn_altura">Altura:</span>
+                <input type="number" name="altura" id="altura">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

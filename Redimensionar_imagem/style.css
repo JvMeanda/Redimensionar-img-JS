@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-color: #8a2be2;
+  --text-header: #f5f5f5;
+  --color-hover: #c9c8c8;
+  --color-press: #acabab;
+  --background-body: #eaeded;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 16px;
+  color: var(--text-header);
+  background-color: var(--header-color);
+  letter-spacing: 2px;
+  position: absolute;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.header_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.container_content {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-body);
+}
+
+.image_window {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.title_size {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 1.8rem;
+}
+
+.ou {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+}
+
+.btn_archive {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--header-color);
+  color: var(--text-header);
+  border: 1px solid;
+  white-space: nowrap;
+  outline: none;
+}
+
+/* DEPOIS DE SELECIONAR A IMAGEM */
+
+.after_compressed {
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  display: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.after_compressed img {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 600px;
+  max-height: 350px;
+  min-width: 150px;
+}
+
+.btn_download {
+  position: absolute;
+  width: 100%;
+  border: none;
+  padding: 0.3rem 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
+  cursor: pointer;
+  background-color: var(--header-color);
+  color: var(--text-header);
+  font-size: 1.3rem;
+  outline: none;
+}
+
+.btn_download:hover,
+.btn_archive:hover {
+  background-color: var(--color-hover);
+  color: #000;
+}
+
+.btn_download:active,
+.btn_archive:active {
+  background-color: var(--color-press);
+}
+
+.size_container {
+  position: absolute;
+  top: 15%;
+  left: 100%;
+  background-color: var(--header-color);
+  padding: 0.6rem 0.7rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  color: var(--text-header);
+}
+
+.size_container input {
+  width: 60px;
+  margin-left: 0.2rem;
+}
+
+/* CSS JS */
+
+.display_visible {
+  display: block;
+}
+
+.display_hidden {
+  display: none;
+}
+
+.container_drop_windows {
+  background-color: rgba(0, 0, 0, 0.46);
+}
+
+.archive_drop_windows {
+  background-color: rgba(0, 0, 0, 0.46);
+}
